@@ -248,8 +248,8 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
     private void getPlaces(double latitude, double longitude) {
 
         Call<FoursquareJSON> call = iMyService.getVenues(
-                "2K2AHRCZ4HOI3VA2GB0QXTRDFZOTGM5V5H1QGN5ENS0QL4YO",
-                "EHIONTUBCDE0MGM0SP1FI1PTQ4RYSRNHPWRLNAR1HLUGUFUY", "202001011", latitude + "," + longitude, "4bf58dd8d48988d117951735", 1000);
+                "JXN3PQZKHB2O4JJN4D0XRCL4M23NWJRLRWFNIZO0YFJX4UJE",
+                "P5S3CFCYBXHQRW5IYDNO34INUIH5Q1VRVIS34SR5OGSZCCBV", "202001011", latitude + "," + longitude, "4bf58dd8d48988d117951735", 1000);
 
         call.enqueue(new Callback<FoursquareJSON>() {
 
@@ -362,8 +362,8 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
 
     private void getVenueInfo(String id) {
 
-        Call<FoursquareJSONVenueInfo> call = iMyService.getVenueInfo(id, "2K2AHRCZ4HOI3VA2GB0QXTRDFZOTGM5V5H1QGN5ENS0QL4YO",
-                "EHIONTUBCDE0MGM0SP1FI1PTQ4RYSRNHPWRLNAR1HLUGUFUY", "202001011");
+        Call<FoursquareJSONVenueInfo> call = iMyService.getVenueInfo(id, "JXN3PQZKHB2O4JJN4D0XRCL4M23NWJRLRWFNIZO0YFJX4UJE",
+                "P5S3CFCYBXHQRW5IYDNO34INUIH5Q1VRVIS34SR5OGSZCCBV", "202001011");
 
         call.enqueue(new Callback<FoursquareJSONVenueInfo>() {
 
